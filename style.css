@@ -1,0 +1,270 @@
+@font-face {
+  font-family: 'Fraunces'; 
+  src: url('./assets/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces'; 
+  src: url('./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans'; 
+  src: url('./assets/fonts/dm-sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Mono'; 
+  src: url('./assets/fonts/dm-mono/DMMono-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Mono'; 
+  src: url('./assets/fonts/dm-mono/DMMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+    background-color: hsl(35, 60%, 96%);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar{
+    display: inline-block;
+    height: 612px;
+    width: 13%;
+    padding: 10px;
+    padding-right: 0px;
+    border-right: 1px solid hsl(36, 22%, 86%);
+}
+
+.logo img{
+    width: 90px;
+}
+
+hr{
+    width: 95%;
+    background-color: hsl(36, 22%, 86%);
+    margin-top: 10px;
+}
+
+.links{
+    width: 90%;
+}
+
+.link{
+    list-style: none;
+    width: 100%;
+    padding: 6px;
+    padding-left: 14px;
+    position: relative;
+    right: 45px;
+}
+
+.link>a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    bottom: 3px;
+    font-size: 12px;
+    font-family: "DM Sans";
+}
+
+.link span{
+    background-color: hsl(15, 74%, 41%);
+    font-size: 8px;
+    text-align: center;
+    padding: 2px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 70px;
+    bottom: 2px;
+}
+
+.icon{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+#selected{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.local{
+    position: relative;
+    top: 180px;
+}
+
+.cassis{
+    background-color: hsl(45, 100%, 74%);
+    background-image: url(./assets/images/icon-weather.svg);
+    background-repeat: no-repeat;
+    background-position-x: 115px;
+    background-position-y: -30px;
+    background-size: 70px;
+    height: 65px;
+    width: 85%;
+    padding: 8px;
+    border-radius: 10px;
+    color: hsl(33, 17%, 41%);
+    font-family: "DM Mono";
+    font-size: 12px;
+}
+
+.temp{
+    display: block;
+    font-size: 27px;
+    color: #000;
+    font-family: "Fraunces";
+}
+
+.temp+span{
+    font-family: "DM Sans";
+    text-underline-offset: 25px;
+    text-decoration: underline dotted hsl(36, 22%, 86%);
+}
+
+.footnote{
+    color: hsl(33, 17%, 41%);
+    margin-top: 10px;
+    font-variant-caps: all-small-caps;
+    font-family: "DM Mono";
+}
+
+#main{
+    display: inline;
+    position: relative;
+    float: right;
+    padding: 20px;
+    max-width: 83%;
+}
+
+.yarn{
+    display: block;
+    font-family: "DM Mono";
+
+    font-size: 15px;
+    font-variant-caps: all-small-caps;
+    color: hsl(33, 17%, 41%);
+}
+
+.title{
+    font-family: "Fraunces";
+    font-size: xx-large;
+    display: inline-block;
+}
+
+.title span{
+    font-family: "Fraunces";
+    font-style: italic;
+    color: hsl(15, 74%, 41%);
+}
+
+.btns{
+    display: inline-block;
+    margin-left: 50%;
+    position: relative;
+    bottom: 8px;
+}
+
+.btns button{
+    font-family: "DM Sans";
+    font-weight: 500;
+    padding: 7px;
+    height: 34px;
+    background: none;
+    border: 1px solid hsl(36, 22%, 86%);
+    border-radius: 17px;
+    margin: 5px;
+}
+
+button.btnrev{
+    background-color: hsl(33, 15%, 15%);
+    border: 1px solid hsl(33, 15%, 15%);
+    color: white;
+}
+
+.receipt{
+    display: inline-block;
+    padding: 10px;
+    width: 260px;
+    height: 290px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+.cardHead>span, .cardHead>div{
+    display: inline-block;
+}
+.rec, .cardHead>div span{
+    color: hsl(33, 17%, 41%);
+    margin-top: 10px;
+    font-variant-caps: all-small-caps;
+    font-family: "DM Mono";
+}
+
+.rec{
+    position: relative;
+    bottom: 10px;
+}
+
+.cardHead>div{
+    position: relative;
+    float: right;
+    text-align: right;
+}
+
+.stay{
+    position: relative;
+    bottom: 22px;
+    font-family: "Fraunces";
+    font-size: 17px;
+}
+
+.hostNote{
+    padding: 10px;
+    width: 260px;
+    height: 290px;
+    border-radius: 20px;
+    background-color: hsl(15, 69%, 37%);
+    color: white;
+    float: right;
+}
+
+.check{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin: 0 13px;
+    text-align: center;
+}
+
+.check>p{
+    font-family: "DM Mono";
+    font-variant-caps: all-small-caps;
+    font-size: 14px;
+    color: hsl(33, 17%, 41%);
+    margin: 6px auto;
+}
