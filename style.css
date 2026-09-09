@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'DM Mono'; 
-  src: url('./assets/fonts/dm-mono/DMMono-Medium.ttf') format('truetype');
+  src: url('./assets/fonts/dm-mono/DMMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'DM Mono'; 
-  src: url('./assets/fonts/dm-mono/DMMono-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/dm-mono/DMMono-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -52,6 +52,7 @@ body{
     padding: 10px;
     padding-right: 0px;
     border-right: 1px solid hsl(36, 22%, 86%);
+    position: fixed;
 }
 
 .logo img{
@@ -115,16 +116,15 @@ hr{
 
 .local{
     position: relative;
-    top: 180px;
+    top: 168px;
 }
 
 .cassis{
     background-color: hsl(45, 100%, 74%);
     background-image: url(./assets/images/icon-weather.svg);
     background-repeat: no-repeat;
-    background-position-x: 115px;
-    background-position-y: -30px;
     background-size: 70px;
+    background-position: 115px -30px;
     height: 65px;
     width: 85%;
     padding: 8px;
@@ -141,31 +141,35 @@ hr{
     font-family: "Fraunces";
 }
 
-.temp+span{
+.cassis .temp+span{
     font-family: "DM Sans";
-    text-underline-offset: 25px;
-    text-decoration: underline dotted hsl(36, 22%, 86%);
 }
 
 .footnote{
     color: hsl(33, 17%, 41%);
-    margin-top: 10px;
     font-variant-caps: all-small-caps;
     font-family: "DM Mono";
+    border-top: 1px dashed hsl(36, 22%, 86%);
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.footnote span{
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 #main{
     display: inline;
-    position: relative;
+    position: relative; 
     float: right;
     padding: 20px;
-    max-width: 83%;
+    width: 82%;
 }
 
-.yarn{
+.yarn, .yarn1{
     display: block;
     font-family: "DM Mono";
-
     font-size: 15px;
     font-variant-caps: all-small-caps;
     color: hsl(33, 17%, 41%);
@@ -209,11 +213,12 @@ button.btnrev{
 
 .receipt{
     display: inline-block;
-    padding: 10px;
-    width: 260px;
-    height: 290px;
+    padding: 20px;
+    width: 290px;
+    height: 300px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
+    margin-left: 20%;
 }
 .cardHead>span, .cardHead>div{
     display: inline-block;
@@ -242,22 +247,18 @@ button.btnrev{
     font-family: "Fraunces";
     font-size: 17px;
 }
-
-.hostNote{
-    padding: 10px;
-    width: 260px;
-    height: 290px;
-    border-radius: 20px;
-    background-color: hsl(15, 69%, 37%);
-    color: white;
-    float: right;
+.divider{
+    border-bottom: hsl(36, 22%, 86%) 1px dotted;
+    border-top: hsl(36, 22%, 86%) 1px dotted;
+    margin-top: -20px;
+    padding-top: 10px;
 }
 
 .check{
     display: inline-block;
     position: relative;
     bottom: 10px;
-    margin: 0 13px;
+    margin: 0 27px;
     text-align: center;
 }
 
@@ -267,4 +268,252 @@ button.btnrev{
     font-size: 14px;
     color: hsl(33, 17%, 41%);
     margin: 6px auto;
+}
+
+.check .temp+span{
+    font-family: "DM Sans";
+    font-size: 11px;
+    font-weight: 500;
+    color: hsl(33, 22%, 20%);
+}
+
+table{
+    width: 100%;
+    font-size: 11px;
+    font-family: "DM Sans";
+    padding: 10px;
+    border-bottom: hsl(33, 17%, 41%) 1px solid;
+}
+
+.item2{
+    font-family: "DM Mono";
+    font-size: 10px;
+    text-align: right;
+}
+
+.last{
+    font-weight: 100;
+    color: hsl(33, 22%, 20%);
+}
+
+.close{
+    margin-top: 10px;
+}
+
+.total{
+    font-family: "DM Mono";
+    font-size: 15px;
+    font-variant-caps: all-small-caps;
+    color: hsl(33, 17%, 41%);
+}
+
+.price{
+    font-family: "Fraunces";
+    font-size: 19px;
+    float: right;
+}
+
+.close .yarn{
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.barcode{
+    float: right;
+    width: 85px;
+    height: 25px;
+}
+
+.line2{
+    margin-top: 15px;
+}
+
+.hostNote{
+    padding: 20px;
+    width: 290px;
+    height: 300px;
+    border-radius: 20px;
+    background: linear-gradient(to top right,hsl(15, 74%, 41%) 60%, hsl(22, 72%, 56%));
+    color: hsl(36, 22%, 86%);
+    float: right;
+    margin-right: 20%;
+}
+
+.hostNote .sun{
+    width: 40px;
+    height: 40px;
+    float: right;
+    position: relative;
+    bottom: 15px;
+}
+
+.yarn1{
+    padding-top: 10px;
+    border-top: hsl(36, 22%, 86%) 1px dashed;
+}
+
+.hostNote .yarn, .yarn1{
+    color: hsl(36, 22%, 86%);
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.notehead{
+    font-family: "Fraunces";
+    font-style: italic;
+    font-size: 15px;
+    color: hsl(42, 83%, 58%);
+}
+
+.notehead span{
+    display: block;
+    color: hsl(36, 22%, 86%);
+    font-size: 28px;
+    margin: 7px 0;
+}
+
+.btm .yarn{
+    margin-bottom: 6px;
+}
+
+.hostSign{
+    font-size: 17px;
+}
+
+.note{
+    margin: 52px 0;
+}
+
+.note>p{
+    font-family: "DM Sans";
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.guest{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.guestbox{
+    display: inline-block;
+    width: 28%;
+    height: 200px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border: hsl(36, 22%, 86%) 1px solid;
+    margin: 10px;
+    padding: 15px;
+}
+
+.guestbox .infohead{
+    font-family: "DM Mono";
+    font-variant-caps: all-small-caps;
+    font-size: 18px;
+    color: hsl(33, 17%, 41%);
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    bottom: 11px;
+}
+
+.guestbox .infoNo{
+    font-family: "Fraunces";
+    font-size: 23px;
+    float: right;
+    color: hsl(33, 22%, 20%);
+}
+
+.guestbox img{
+    width: 23px;
+    padding: 6px;
+    border-radius: 5px;         
+}
+
+.guestbox .not{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-family: "Fraunces";
+    font-size: 20px;
+}
+
+.guestbox .rock{
+    font-family: "DM Sans";
+    font-size: 11px;
+    color: hsl(33, 17%, 41%);
+}
+
+.guesth1 img{
+    background-color: hsl(15, 74%, 41%);
+}
+.guesth2 img{
+    background-color: hsl(230, 49%, 56%);
+}
+.guesth3 img{
+    background-color: hsl(340, 48%, 52%);
+}
+
+.guesth1 .infohead{
+    color: hsl(15, 74%, 41%);
+}
+.guesth2 .infohead{
+    color: hsl(230, 49%, 56%);
+}
+.guesth3 .infohead{
+    color: hsl(340, 48%, 52%);
+}
+
+.guesth1 .infoNo{
+    color: hsl(15, 74%, 41%);
+}
+.guesth2 .infoNo{
+    color: hsl(230, 49%, 56%);
+}
+.guesth3 .infoNo{
+    color: hsl(340, 48%, 52%);
+}
+
+.guestbox p{
+    font-family: "DM Sans";
+    color: hsl(33, 22%, 20%);
+}
+
+.fran{
+    display: inline-block;
+}
+
+.rank{
+    background-color: hsl(30, 24%, 93%);
+    font-family: "DM Mono";
+    color: hsl(33, 17%, 41%);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.q{
+    font-variant-caps: all-small-caps;
+    font-size: 15px;
+}
+
+.ranks{
+    margin-top: 8px;
+}
+
+.rank span+span{
+    float: right;
+    font-family: "DM Sans";
+    font-size: 12px;
+    color: #000;
+}
+
+.copy{
+    font-size: 12px;
+    font-variant-caps: all-small-caps;
+    color: hsl(33, 17%, 41%);
+    border: 1px solid hsl(36, 22%, 86%);
+    border-radius: 10px;
+    margin-left: 5px;
 }

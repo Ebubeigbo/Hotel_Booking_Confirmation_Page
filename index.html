@@ -10,7 +10,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution { font-size: 0.6875rem; text-align: center;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -44,7 +44,7 @@
       <br>
       <div class="footnote">
         <span>Est. 1987</span><br>
-        <span>Maison Soleil · 12 Rue des Oliviers · Cassis</span><br>
+        <span>Maison Soleil · 12 Rue des <br> Oliviers · Cassis</span><br>
         <span>© 2026 Maison Soleil</span>
       </div>
     </div>
@@ -80,78 +80,128 @@
           <div class="check">
             <p>Check in</p>
             <span class="temp">25 Apr</span>
-            Saturday · 15:00 
+            <span>Saturday · 15:00</span> 
           </div>
           <div class="check">
             <p>Check out</p>
             <span class="temp">29 Apr</span>
-            Wednesday · 11:00
+            <span>Wednesday · 11:00</span>
           </div>
         </div>
-
-        Room · La Garrigue · 4 nights
-        € 620.00
-        Breakfast · 2 guests
-        € 96.00
-        Tourist tax
-        € 14.40
-
-        Total paid
-        € 730.40
-
-        Paid · Wise · GBP
-        <!-- Barcode image -->
-        <img src="./assets/images/icon-barcode.svg" alt="" class="barcode">
+        <table>
+          <tr>
+            <td class="item">Room · La Garrigue · 4 nights</td>
+            <td class="item2">€ 620.00</td>
+          </tr>
+          <tr>
+            <td class="item">Breakfast · 2 guests</td>
+            <td class="item2">€ 96.00</td>
+          </tr>
+          <tr class="last">
+            <td>Tourist tax</td>
+            <td class="item2">€ 14.40</td>
+          </tr>
+        </table>
+        <div class="close">
+          <div class="line1">
+            <span class="total">Total paid</span>
+            <span class="price">€ 730.40</span>
+          </div>
+          <div class="line2">
+            <span class="yarn">Paid · Wise · GBP</span>
+            <!-- Barcode image -->
+            <img src="./assets/images/icon-barcode.svg" alt="" class="barcode">
+          </div>
+        </div>
       </div>
       
       <!-- Note from host card -->
       <div class="hostNote">
-        <span>Welcome</span>
-        A note from your host, Margaux.
-        We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-        Room
-        La Garrigue
+        <span class="yarn1">Welcome Card</span>
+        <img src="./assets/images/icon-sun.svg" alt="" class="sun">
+        <div class="note">
+          <div class="notehead">
+            <p>A note from your host, <span>Margaux.</span></p>
+          </div>
+          <p>We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+        </div>
+        <div class="btm">
+          <span class="yarn">Room</span>
+          <span class="hostSign">La Garrigue</span>
+        </div>
+      </div>
+    </div>
+    <!-- Booking cards end -->
+
+    <!-- Guest info row starts -->
+    <div class="guest">
+      
+      <!-- Arrival -->
+      <div class="guestbox">
+        <div class="guesth1">
+          <div class="fran">
+            <img src="./assets/images/icon-key.svg" alt="">
+            <span class="infohead">Arrival</span>
+          </div>
+          <span class="infoNo">01</span>
+        </div>
+        <div>
+          <span class="not">Check-in from 15:00</span>
+          <span class="rock">Sat, 25 April</span>
+        </div>
+        <p>Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+      </div>
+      
+      <!-- Wifi -->
+      <div class="guestbox">
+        <div class="guesth2">
+          <div class="fran">
+            <img src="./assets/images/icon-wifi.svg" alt="">
+            <span class="infohead">Wifi</span>
+          </div>
+          <span class="infoNo">02</span>
+        </div>
+        <div>
+          <span class="not">Le Soleil · Guest</span>
+          <span class="rock">Password below</span>
+        </div>
+        <div class="ranks">
+          <div class="rank">
+            <span class="q">Network</span>
+            <span>Le Soleil · Guest</span>
+          </div>
+          <div class="rank">
+            <span class="q">Password</span>
+            <span>soleil-2026<button class="copy">Copy</button></span>
+          </div>
+        </div>
       </div>
 
-    </div>
-      <!-- Booking cards end -->
-
-      <!-- Guest info row starts -->
-
-      <!-- Arrival -->
-      Arrival
-      01
-      Check-in from 15:00
-      Sat, 25 April
-      Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
-
-      <!-- Wifi -->
-      Wifi
-      02
-      Le Soleil · Guest
-      Password below
-      Network
-      Le Soleil · Guest
-      Password
-      soleil-2026
-      Copy
-
       <!-- Breakfast -->
-      Breakfast
-      03
-      Served 8 - 10:30
-      On the terrace
-      Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
-
-      <!-- Guest info row ends -->
-
+      <div class="guestbox">
+        <div class="guesth3">
+          <div class="fran">
+            <img src="./assets/images/icon-breakfast.svg" alt="">
+            <span class="infohead">Breakfast</span>
+          </div>
+          <span class="infoNo">03</span>
+        </div>
+        <div>
+          <span class="not">Served 8 - 10:30</span>
+          <span class="rock">On the terrace</span>
+        </div>
+        <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+      </div>
+    </div>
+    <!-- Guest info row ends -->
+    
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Ebubeigbo">Igbo Donald Ebubechukwu</a>.
+    </footer>
+    
   </section>
   <!-- Main content ends -->
-  
-  <!-- <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/Ebubeigbo">Igbo Donald Ebubechukwu</a>.
-  </footer> -->
 
 </body>
 </html>
