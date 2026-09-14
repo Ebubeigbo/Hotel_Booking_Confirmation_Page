@@ -219,6 +219,7 @@ button.btnrev{
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     margin-left: 20%;
+    transform: rotate(-5deg);
 }
 .cardHead>span, .cardHead>div{
     display: inline-block;
@@ -338,6 +339,7 @@ table{
     color: hsl(36, 22%, 86%);
     float: right;
     margin-right: 20%;
+    transform: rotate(5deg);
 }
 
 .hostNote .sun{
